@@ -310,7 +310,6 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
-    background-color: red;
     max-width: 100%;
     padding: 28px 0;
   }

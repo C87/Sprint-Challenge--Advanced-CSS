@@ -166,6 +166,10 @@ p {
 .header {
   background-color: #F6F6F6;
   border-bottom: 2px solid #F1F1F1;
+  opacity: 0.5;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 .header .header-container {
   margin: auto;
@@ -185,7 +189,7 @@ p {
   margin: auto;
   width: 50%;
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .header .header-container nav {
     width: 75%;
   }
@@ -210,6 +214,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  padding-top: 103px;
 }
 .home .intro img {
   border-radius: 5px;

@@ -3,6 +3,10 @@
 .header {
     background-color: @nav-bg;
     border-bottom: 2px solid @nav-border;
+    opacity: 0.5;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 
     .header-container {
         margin: auto;
@@ -21,7 +25,7 @@
             margin: auto;
             width: 50%;
 
-            @media @phone {
+            @media @tablet {
                 width: 75%;
             }
 

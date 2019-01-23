@@ -1,1 +1,46 @@
 // Navigation code here
+
+.header {
+    background-color: @nav-bg;
+    border-bottom: 2px solid @nav-border;
+    opacity: 0.5;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+
+    .header-container {
+        margin: auto;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        max-width: @max-width;
+
+        h1 {
+            color: @header-font-color;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        nav {
+            .flex(nowrap, space-around);
+            margin: auto;
+            width: 50%;
+
+            @media @tablet {
+                width: 75%;
+            }
+
+            a {
+                color: @nav-font;
+                font-size: 1.6rem;
+                text-decoration: none;
+
+                &:link,
+                &:visited,
+                &:hover,
+                &:active {
+                    color: @nav-font;
+                }
+            }
+        }
+    }
+}
